@@ -8,4 +8,4 @@ yellow = chrysanthemum
 blue = hydrangea
 purple = lavender
 
-confetti gif found online
+confetti gif found online 
