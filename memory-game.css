@@ -1,0 +1,67 @@
+/* you can add to or change this. */
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 100px;
+  height: 135px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+#game .flipped {
+  transform: rotateY(180deg);
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100px;
+  height: 135px;
+  backface-visibility: hidden;
+}
+
+#confetti {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.button {
+  text-align: center;
+  margin-top: 1em;
+}
+
+#reset {
+  font-size: 1.2em;
+}
+
+#reset:hover {
+  background-color: rgb(135, 127, 204);
+  border-color:rgb(135, 127, 204);
+  color: white;
+}
+
+
